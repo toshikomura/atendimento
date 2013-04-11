@@ -36,3 +36,7 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+
+# Use to deploy
+gem 'rvm-capistrano'
+gem 'passenger'
