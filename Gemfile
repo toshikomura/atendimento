@@ -40,3 +40,6 @@ gem 'capistrano'
 # Use to deploy
 gem 'rvm-capistrano'
 gem 'passenger'
+
+# Include authentication with devise
+gem 'devise'
