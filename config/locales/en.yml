@@ -24,3 +24,5 @@ en:
         ta02_horario_fim_consulta: "Horario Fim Consulta"
       user:
         email: "E-Mail"
+        password: "Senha"
+        passowrd_confirmation: "Confirmar Senha"
