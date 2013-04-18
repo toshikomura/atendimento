@@ -3,3 +3,24 @@
 
 en:
   hello: "Hello world"
+  helpers:
+    select:
+      prompt: "Por favor selecione"
+    submit:
+      create: 'Salvar %{model}'
+      update: 'Atualizar %{model}'
+      submit: 'Enviar %{model}'
+  activerecord:
+    models:
+      user: "Usuario"
+      taf: "Agendamento Futuro"
+    attributes:
+      taf:
+        te_id: "Escala"
+        tu_id: "Usuario"
+        top_id: "Orgao"
+        tts_id: "Sitaucao"
+        ta01_horario_inicio_consulta: "Horario Inicio Consulta"
+        ta02_horario_fim_consulta: "Horario Fim Consulta"
+      user:
+        email: "E-Mail"
