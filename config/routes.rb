@@ -1,4 +1,6 @@
 Atendimentosb::Application.routes.draw do
+  resources :tafs
+
   devise_for :users
 
   # The priority is based upon order of creation:

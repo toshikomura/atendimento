@@ -1,0 +1,41 @@
+<%= form_for(@taf) do |f| %>
+  <% if @taf.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taf.errors.count, "error") %> prohibited this taf from being saved:</h2>
+
+      <ul>
+      <% @taf.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :te_id %><br />
+    <%= f.number_field :te_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tu_id %><br />
+    <%= f.number_field :tu_id %>
+  </div>
+  <div class="field">
+    <%= f.label :top_id %><br />
+    <%= f.number_field :top_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tts_id %><br />
+    <%= f.number_field :tts_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ta01_horario_inicio_consulta %><br />
+    <%= f.datetime_select :ta01_horario_inicio_consulta %>
+  </div>
+  <div class="field">
+    <%= f.label :ta02_horario_fim_consulta %><br />
+    <%= f.datetime_select :ta02_horario_fim_consulta %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,33 @@
+<h1>Listing tafs</h1>
+
+<table>
+  <tr>
+    <th>Te</th>
+    <th>Tu</th>
+    <th>Top</th>
+    <th>Tts</th>
+    <th>Ta01 horario inicio consulta</th>
+    <th>Ta02 horario fim consulta</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tafs.each do |taf| %>
+  <tr>
+    <td><%= taf.te_id %></td>
+    <td><%= taf.tu_id %></td>
+    <td><%= taf.top_id %></td>
+    <td><%= taf.tts_id %></td>
+    <td><%= taf.ta01_horario_inicio_consulta %></td>
+    <td><%= taf.ta02_horario_fim_consulta %></td>
+    <td><%= link_to 'Show', taf %></td>
+    <td><%= link_to 'Edit', edit_taf_path(taf) %></td>
+    <td><%= link_to 'Destroy', taf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Taf', new_taf_path %>
