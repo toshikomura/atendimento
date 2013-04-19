@@ -8,6 +8,16 @@
 </head>
 <body>
 
+ <div id="user_nav">
+   <% if user_signed_in? %>
+     Logado como <%= current_user.email %>. Não é você?
+     <%= link_to "Sair", destroy_user_session_path %>
+   <% else %>
+     <%= link_to "Cadastrar", new_user_registration_path %> or
+     <%= link_to "Logar", new_user_session_path %>
+   <% end %>
+ </div>
+
 <%= yield %>
 
 </body>
