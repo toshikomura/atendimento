@@ -25,4 +25,4 @@ en:
       user:
         email: "E-Mail"
         password: "Senha"
-        passowrd_confirmation: "Confirmar Senha"
+        password_confirmation: "Confirmar Senha"
