@@ -3,23 +3,58 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+<table>
+  <tr>
+    <td>
+      <div><%= f.label :email %><br />
+    </td>
+    <td>
+      <%= f.email_field :email, :autofocus => true %></div>
+    </td>
+  </tr>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
+  <tr>
+    <td>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+    </td>
+  </tr>
 
-  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password, :autocomplete => "off" %></div>
+  <tr>
+    <td>
+      <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    </td>
+    <td>
+      <%= f.password_field :password, :autocomplete => "off" %></div>
+    </td>
+  </tr>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <tr>
+    <td>
+      <div><%= f.label :password_confirmation %><br />
+    </td>
+    <td>
+      <%= f.password_field :password_confirmation %></div>
+    </td>
+  </tr>
 
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></div>
+  <tr>
+    <td>
+      <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    </td>
+    <td>
+      <%= f.password_field :current_password %></div>
+    </td>
+  </tr>
 
-  <div><%= f.submit "Atualizar" %></div>
+  <tr>
+    <td>
+      <div><%= f.submit "Atualizar" %></div>
+    </td>
+  </tr>
+</table>
+
 <% end %>
 
 <h3>Cancelar minha conta</h3>

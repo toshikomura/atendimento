@@ -1,23 +1,23 @@
 <h2>Login</h2>
 
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
 <table>
   <tr>
     <td>
-      <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-        <div><%= f.label :email %><br />
+      <div><%= f.label :email %><br />
     </td>
-
     <td>
-        <%= f.email_field :email, :autofocus => true %></div>
+      <%= f.email_field :email, :autofocus => true %></div>
     </td>
   </tr>
 
   <tr>
     <td>
-        <div><%= f.label :password %><br />
+      <div><%= f.label :password %><br />
     </td>
     <td>
-        <%= f.password_field :password %></div>
+      <%= f.password_field :password %></div>
     </td>
     <td>
       <% if devise_mapping.rememberable? -%>
@@ -30,8 +30,9 @@
     <td>
       <div><%= f.submit "Entrar" %></div>
     </td>
-    <% end %>
   </tr>
 </table>
+
+<% end %>
 
 <%= render "devise/shared/links" %>

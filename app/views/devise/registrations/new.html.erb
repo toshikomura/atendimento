@@ -1,18 +1,43 @@
 <h2>Cadastro</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+<table>
+  <tr>
+    <td>
+      <div><%= f.label :email %><br />
+    </td>
+    <td>
+      <%= f.email_field :email, :autofocus => true %></div>
+    </td>
+  </tr>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+  <tr>
+    <td>
+      <div><%= f.label :password %><br />
+    </td>
+    <td>
+      <%= f.password_field :password %></div>
+    </td>
+  </tr>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <tr>
+    <td>
+      <div><%= f.label :password_confirmation %><br />
+    </td>
+    <td>
+      <%= f.password_field :password_confirmation %></div>
+    </td>
+  </tr>
 
-  <div><%= f.submit "Cadastrar" %></div>
+  <tr>
+    <td>
+      <div><%= f.submit "Cadastrar" %></div>
+    </td>
+  </tr>
+</table>
+
 <% end %>
 
 <%= render "devise/shared/links" %>
