@@ -46,3 +46,6 @@ gem 'devise'
 
 # Include flexible authentication with cancan
 gem 'cancan'
+
+# Include many types of users
+gem 'rolify'
