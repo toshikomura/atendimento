@@ -36,6 +36,6 @@ Atendimentosb::Application.configure do
   config.assets.debug = true
 
   # Set default url
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'localhost:2342' }
 
 end
