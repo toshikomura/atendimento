@@ -43,3 +43,6 @@ gem 'passenger'
 
 # Include authentication with devise
 gem 'devise'
+
+# Include flexible authentication with cancan
+gem 'cancan'
